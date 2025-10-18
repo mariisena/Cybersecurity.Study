@@ -1,0 +1,30 @@
+# Nmap 7.95 scan initiated Sat Oct 18 12:28:48 2025 as: /usr/lib/nmap/nmap -A -oN scan_google.txt 8.8.8.8
+Nmap scan report for dns.google (8.8.8.8)
+Host is up (0.0049s latency).
+Not shown: 998 filtered tcp ports (no-response)
+PORT    STATE SERVICE        VERSION
+53/tcp  open  tcpwrapped
+443/tcp open  ssl/tcpwrapped
+| http-server-header: 
+|   HTTP server (unknown)
+|_  scaffolding on HTTPServer2
+|_ssl-date: TLS randomness does not represent time
+|_http-title: Google Public DNS
+| ssl-cert: Subject: commonName=dns.google
+| Subject Alternative Name: DNS:dns.google, DNS:dns.google.com, DNS:*.dns.google.com, DNS:8888.google, DNS:dns64.dns.google, IP Address:8.8.8.8, IP Address:8.8.4.4, IP Address:2001:4860:4860:0:0:0:0:8888, IP Address:2001:4860:4860:0:0:0:0:8844, IP Address:2001:4860:4860:0:0:0:0:6464, IP Address:2001:4860:4860:0:0:0:0:64
+| Not valid before: 2025-09-22T08:42:44
+|_Not valid after:  2025-12-15T08:42:43
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: switch|bridge|general purpose|VoIP adapter
+Running (JUST GUESSING): Cisco embedded (88%), Oracle Virtualbox (86%), Slirp (86%), QEMU (86%)
+OS CPE: cpe:/h:cisco:catalyst_1900 cpe:/o:oracle:virtualbox cpe:/a:danny_gasparovski:slirp cpe:/a:qemu:qemu cpe:/h:cisco:ata_188_voip_gateway
+Aggressive OS guesses: Cisco Catalyst 1900 switch (88%), Oracle Virtualbox Slirp NAT bridge (86%), QEMU user mode network gateway (86%), Cisco ATA 188 VoIP adapter (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT     ADDRESS
+1   4.52 ms dns.google (8.8.8.8)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Oct 18 12:29:12 2025 -- 1 IP address (1 host up) scanned in 23.44 seconds

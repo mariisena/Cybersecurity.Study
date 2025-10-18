@@ -1,0 +1,18 @@
+ # Resultados de scans privados
+*roteador*.txt
+*local*.txt
+*192.168*.txt
+scan_privado/
+
+# Credenciais
+*.key
+*.pem
+passwords.txt
+credentials.txt
+
+# Configs sensíveis
+config.ini
+secrets.py
+
+# Dados pessoais
+anotacoes_privadas.md
